@@ -1,8 +1,8 @@
 # 실행 결과 보관
 
-01~15 및 보너스 실행 캡처가 이 폴더에 복사되어 있다.
+01–15 및 보너스 실행 캡처가 이 폴더에 복사되어 있다.
 
-- 01~12: queries.sql의 같은 번호 SELECT와 결과
+- 01–12: queries.sql의 같은 번호 SELECT와 결과
 - 13: UPDATE와 이후 조회 결과
 - 14: DELETE RETURNING 결과와 삭제 후 행 수
 - 15_index: 생성 SQL과 pg_indexes 확인 결과

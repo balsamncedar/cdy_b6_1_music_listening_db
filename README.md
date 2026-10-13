@@ -383,8 +383,8 @@ UNION ALL SELECT 'play_history', COUNT(*) FROM play_history;
 ## 6. 핵심 SQL 15개와 실행 결과
 
 원본: [queries.sql](queries.sql).
-Q01~Q04는 기본 조회, Q05~Q08은 조인, Q09~Q11은 집계,
-Q12는 서브쿼리, Q13~Q14는 수정·삭제, Q15는 인덱스이다.
+Q01–Q04는 기본 조회, Q05–Q08은 조인, Q09–Q11은 집계,
+Q12는 서브쿼리, Q13–Q14는 수정·삭제, Q15는 인덱스이다.
 최종 SQL에는 동률 정렬 기준을 추가해 결과 순서를 일정하게 했다.
 
 ### Q01. 180초 이상인 곡을 긴 순으로 최대 5개 조회한다.
@@ -736,8 +736,8 @@ ANALYZE로 통계를 갱신한 후에는 해당 인덱스를 사용하는 Index 
 | FK를 사용한 1:N 관계가 최소 2개인가? | 앨범-곡 등 5개 FK 관계                                | ERD와 3절 관계 표                                         |
 | 없는 값 참조가 실제로 막히는가?      | track_id=-1 입력 시 FK 오류                           | [FK 오류 결과](results/bonus_02_FK.png)                   |
 | 테이블마다 최소 10행인가?            | 기본 입력 후 10 / 12 / 11 / 22 / 24 / 12행            | seed.sql 마지막 행 수 확인 쿼리, music_verify 확인 결과   |
-| 기본 조회 4개인가?                   | Q01~Q04: 조건·정렬·개수 제한                          | queries.sql, results/01~04.png                            |
-| 조인 4개인가?                        | Q05~Q08: INNER JOIN 3개, LEFT JOIN 1개                | queries.sql, results/05~08.png                            |
+| 기본 조회 4개인가?                   | Q01–Q04: 조건·정렬·개수 제한                          | queries.sql, `results/01~04.png`                          |
+| 조인 4개인가?                        | Q05–Q08: INNER JOIN 3개, LEFT JOIN 1개                | queries.sql, `results/05~08.png`                          |
 | 집계 3개인가?                        | Q09 COUNT, Q10 SUM, Q11 AVG와 GROUP BY                | queries.sql, results/09~11.png                            |
 | 서브쿼리 1개인가?                    | Q12: 전체 평균보다 긴 곡 조회                         | [Q12 결과](results/12.png)                                |
 | 수정·삭제 2개인가?                   | Q13 닉네임 변경, Q14 재생 기록 삭제                   | queries.sql 및 13·14번 캡처                               |
