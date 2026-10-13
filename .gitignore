@@ -1,0 +1,7 @@
+# 개인 학습 기록 (로컬 보관)
+/work_log.sql
+
+# 운영체제에서 생성하는 파일
+Thumbs.db
+Desktop.ini
+.DS_Store
